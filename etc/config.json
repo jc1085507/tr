@@ -1,0 +1,22 @@
+{
+    "run_type": "server",
+    "local_addr": "0.0.0.0",
+    "local_port": 61080,
+    "remote_addr": "sttart.render.com",
+    "remote_port": 443,
+    "log_level": 2,
+    "password": [
+        "$AUUID"
+    ],
+    "websocket": {
+    "enabled": true,
+    "path": "/$AUUID-tr",
+    "host": "sttart.render.com"
+    },
+    "router":{
+        "enabled": true,
+        "block": [
+            "geoip:private"
+        ]
+    }
+}
